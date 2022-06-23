@@ -145,25 +145,63 @@
 
 // // 7- Password (PAS FINI)
 
-// const password =""
+
 
 // const generatePassword = (num) => {
-//     for (i=0; i<= num.lenght; i++) {
-//         password.push()
+
+
+//     if (num < 6 || num > 15) {
+//         return "Error"
 //     }
+    
+//     let password =''
+
+//     for (i=0; i< num; i++) {
+//         let nbAscii =  Math.random() * (91 - 65) + 65
+//         let res = String.fromCharCode(nbAscii)
+//         password+=res
+//     }
+//     return password
 
 // }
+// console.log (generatePassword(15))
+// console.log (generatePassword(14))
+// console.log (generatePassword(10))
+// console.log (generatePassword(5))
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // 8- Let's play
-// let diceResult = 0
 
 // const launchDice = (numberOfDice) => {
-//     for (i=0; i<= numberOfDice.lenght; i++) {
-//         diceResult= Math.floor(Math.random() * 6)
+
+
+//     if (numberOfDice <= 0) {
+//         return "Error"
 //     }
+
+//     let diceResult = 0
+
+//     for (i=0; i < numberOfDice; i++) {
+//         diceResult += Math.floor(Math.random() * 6)
+//     }
+
+//     return diceResult
 
 // }
 
-console.log (Math.floor(Math.random() * 6))
+// ////////////////////////////////
+
+// let joueur1 = launchDice(5);
+// let joueur2 = launchDice(5);
+
+// if (joueur1 > joueur2) {
+//     console.log(`Le joueur 1 a gagné avec ${joueur1} points`)
+// }
+// else if (joueur1 < joueur2) {
+//     console.log(`Le joueur 2 a gagné avec ${joueur2} points`)
+// }
+// else {
+//     console.log (`Il y a égalité avec ${joueur1} points`)
+// }
+
